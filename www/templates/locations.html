@@ -1,0 +1,29 @@
+<ion-view> 
+    <ion-content style="padding:0px; margin:0px">
+        
+        <div class="dashboard">
+            Locations Visited 
+        </div>
+
+        <div ng-repeat="letter in locations track by $index">
+            <div ng-repeat="i in [$index]" ng-if="locations[i] != null">
+
+                <div class="location vertical-align-wrap" style="background-image:url('{{locations[i].photo}}')" ui-sref="details">
+                    <div class="dark-overlay vertical-align-middle">
+                        <i class="ion-android-pin large"></i><br>
+                        <b>{{locations[i].city}}</b><br>
+                        {{locations[i].country}}<br>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+    </ion-content>
+    
+    <button class="circular plus fab white-fab">
+        <i class="ion-plus"></i>
+    </button>
+    
+</ion-view>
+

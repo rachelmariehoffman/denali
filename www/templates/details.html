@@ -1,0 +1,47 @@
+<ion-view> 
+    <ion-content style="padding:0px; margin:0px">
+
+        <div class="dashboard">
+            Location Details
+        </div>
+        
+        <div id="topdiv" class="vertical-align-wrap">
+            <div class="dark-overlay vertical-align-middle">
+                <i class="ion-android-bar large"></i><br>
+                <b>Bars and Eateries</b><br>
+                21 Restaurants, 14 Bars, 7 Cafes<br>
+            </div>
+        </div>
+        <div id="middlediv" class="vertical-align-wrap">
+            <div class="dark-overlay vertical-align-middle">
+                <i class="ion-android-bicycle large"></i><br>
+                <b>Attractions</b><br>
+                4 Museums, 3 Cinemas, 1 Hike<br>
+            </div>
+        </div>
+        <div id="bottomdiv" class="vertical-align-wrap">
+            <div class="dark-overlay vertical-align-middle">
+                <i class="ion-android-home large"></i><br>
+                <b>Accommodations</b><br>
+                2 Hotels, 2 Inns, 1 Air BnB<br>
+            </div>
+        </div>
+
+    </ion-content>
+    
+    <div ng-show="showFAB">
+        <button class="circular beer fab gray-fab">
+            <i class="ion-android-bar"></i>
+        </button>
+        <button class="circular bike fab gray-fab">
+            <i class="ion-android-bicycle"></i>
+        </button>
+        <button class="circular home fab gray-fab">
+            <i class="ion-android-home"></i>
+        </button>
+    </div>
+    <button class="circular plus fab white-fab" ng-click="showFAB = !showFAB">
+        <i class="ion-plus"></i>
+    </button>
+    
+</ion-view>

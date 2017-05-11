@@ -1,0 +1,190 @@
+ /*Empty. Add your own CSS if you like */
+ 
+/* blue: #297B8C */
+/* light gray: #999999*/
+/* dark gray: #333333 */
+
+ion-content {
+    color: white;
+    padding: 10%;
+}
+    
+hr {
+    border-color: white;
+}
+    
+.input-field {
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+}
+    
+.input-text {
+    text-transform: lowercase;
+    font-variant: small-caps;
+}
+    
+.button-style {
+    font-size: 15px;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    border: 1px solid white;
+    border-radius: 2px;
+    margin: 5px 0px;
+    padding: 7px 0px;
+}
+    
+.transparent {
+    color: white;
+    background-color: transparent;
+}
+    
+.opaque {
+    color: #333333;
+    background-color: white;
+}
+    
+.strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 15px;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    padding: 10px 0px;
+}
+    
+.strike>span {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+    
+.strike>span:before,
+.strike>span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    border-top: 1px solid white;
+}
+    
+.strike>span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+    
+.strike>span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+    
+.dashboard {
+    height: 45px;
+    line-height: 45px;
+    background-color: #333333;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+    
+#topdiv {
+    height: calc(100vh/3 - 15px);
+    background-image: url('/img/dividers/restaurants.jpg');
+    background-size: cover;
+    background-position: center;
+}
+    
+#middlediv {
+    height: calc(100vh/3 - 15px);
+    background-image: url('/img/dividers/attractions.jpg');
+    background-size: cover;
+    background-position: center;
+}
+    
+    
+#bottomdiv {
+    height: calc(100vh/3 - 15px);
+    background-image: url('/img/dividers/accommodations.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.location {
+    width: 100%;
+    height:50vw;
+    background-position: center;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.large {
+    font-size: large;
+}
+
+.dark-overlay { 
+    background:rgba(0,0,0,0.5);
+    width:100%;
+    height:100%;
+    opacity:1;
+    text-align: center;
+    text-shadow: 1px 1px #333333;
+    font-style: italic;
+}
+
+.vertical-align-wrap {
+    width: 100%;
+    display: table;
+}
+    
+.vertical-align-middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+.plus {
+    bottom: 10px;
+    right: 20px;
+}
+
+.beer {
+    bottom: 170px;
+    right: 10px;
+}
+
+.bike {
+    bottom: 110px;
+    right: 10px;
+}
+
+.home {
+    bottom: 50px;
+    right: 10px;
+}
+
+.white-fab {
+    background-color: white;
+    color: #333333;
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+.gray-fab {
+    background-color: #333333;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    border: 1px solid #666666;
+}
+
+.fab {
+    position: fixed;
+    cursor: pointer;
+    border-radius: 50%;
+}
